@@ -1,0 +1,9 @@
+Start of day:
+    git pull
+After making changes:
+    git status         // check what's different
+    git add fileNAME   // add new files
+    git commit -m "what changes did you make" // add a commit message
+    git push           // push up new changes to remote master branch
+
+
