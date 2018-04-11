@@ -1,0 +1,11 @@
+// Make a copy of the list
+// Make note of the index 0 of the list (let's call this number "head")
+// Sort the list
+// then do the difference of head and the item after head in the sorted list (let's call this "second")
+// then the diff of second and the item after second etc
+// when you hit the final item in the sorted list find the diff of the last item in the sorted list and the first item in the sorted list
+// then find the diff of the first item in the sorted list and the second item in the sorted list
+// then the diff of the second item in the sorted list and the third item in the sorted list etc...
+// continue until you hit "head" in the sorted list 
+// add all of the diffs together or keep a running total as you go
+// return the sum of all the diffs
