@@ -1,0 +1,50 @@
+Start at the top of list
+-loop through list to find out which
+difference is the shortest at that time.
+i.e. with a list like this:
+5031
+1024
+5065
+3117
+
+it would start at 5031 then go to 5065, next to 3117, next to 1024.
+
+this algo requires that you process the list of blocks,
+find the shortest distance, then process the list of blocks again.
+
+you can't just sort the list.
+
+go through and calculate, find the shortest distance from the last block/process.
+
+//create an array
+
+//store a binary value that checks if I have seen 
+//that block(int) before and don't need to process it again
+
+//every time I process the difference between the 
+// block I currently have and the one I need to process
+// it always needs to be positive, math.h use abs(int) or
+// x>y ? x-y : y-x 
+// store that value in a different array as I will
+// be summing then at the end.
+// make sure to check off the next block I want to proccess// then loop through the list again
+// for (i=0; i < count(count all the values that came into
+// the array, unless the list is the 
+// same then hard code it.);i++) {}
+// have a while on the outside, for loop on the inside?
+// process the list every time after adding a binary value
+// (or set the value to 0 after using it?--hacky) 
+// make sure to check which one is closest to last one 
+// checked (or use a pointer vs checking p_checked) or 
+// something. especially if I will be setting to 0.
+
+// o(n) operation
+
+ // keep track of where you where at last, find the 
+// next value that is closest to it,
+// mark it somewhere in here, or keep track
+// find the positive(difference) abs. 
+// put the difference in an array for summing 
+// with its other indexes later.
+
+// loop through entire array and repeat above steps.
