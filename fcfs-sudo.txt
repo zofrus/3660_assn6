@@ -1,0 +1,10 @@
+// start at index 0 from the list
+// do the difference between 0 and 1
+// then diff between 1 and 2
+// then diff between 2 and 3 etc
+// after you have gone through the whole list
+// and stored the positive abs(differences) in
+// another array, sum the other array. 
+// or even just keep a running total of the
+// differences then you will have what you need at 
+// the end i.e. var bleh. bleh += bleh. ( in the loop )

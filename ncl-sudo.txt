@@ -1,0 +1,12 @@
+//elevator -- the look
+
+// sort list copy but not original list
+
+// scan starts at the top, goes down to the last block
+// calculate the distance((abs(difference))) between
+// that block and the next block above it,
+// then just do that for the next blocks sequentially
+// going back up.
+
+// keep track of difference in another array. then sum
+// them at the end.
