@@ -20,7 +20,8 @@ int main(int argc, char *argv[]) {
 	}
 	
 	// Call to Algorithms here
-	FCFS(requests, count);
+	//FCFS(requests, count);
+	SSTF(requests, count);
 
 	return 0;
 }
