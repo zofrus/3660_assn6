@@ -1,3 +1,6 @@
+#include "assn6.h"
+
+
 void CLook(int *requests, int count)
 {
   int list[count];
