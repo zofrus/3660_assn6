@@ -1,4 +1,4 @@
-#include 'assn6.h'
+#include "assn6.h"
 
 void FCFS(int *requests, int count) {
 	 int ready[BLOCK_REQS]; 

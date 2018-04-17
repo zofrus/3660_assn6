@@ -1,5 +1,4 @@
-#include 'assn6.h'
-
+#include "assn6.h"
 
 int main(int argc, char *argv[]) {
 	FILE *fp = stdin;
