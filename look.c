@@ -2,9 +2,10 @@ void Look(int *requests, int count)
 {
   int list[count];
   int head, headIndex, seek = 0, current = 0;
+  int i;
 
   //copying the list of request times into a new array as to not overwrite the original
-  for (int i = 0; i < count; i++)
+  for (i = 0; i < count; i++)
   {
    list[i] = requests[i];
   }
