@@ -21,7 +21,9 @@ int main(int argc, char *argv[]) {
 	
 	// Call to Algorithms here
 	//FCFS(requests, count);
-	SSTF(requests, count);
+	//SSTF(requests, count);
+	Look(requests, count);
+	CLook(requests, count);
 
 	return 0;
 }

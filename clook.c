@@ -14,7 +14,7 @@ void CLook(int *requests, int count)
   }
 
   //keeping track of the first request time in the unsorted list
-  head = list[i];
+  head = list[0];
   //sorting the list of request times
   sort(list, count);
 
@@ -44,7 +44,7 @@ void CLook(int *requests, int count)
   //etc...
   while (current < headIndex)
   {
-    seek += abs(requests[current] - requests[current - 1]);
+    seek += abs(list[current] - list[current - 1]);
     current++;
   }
 
