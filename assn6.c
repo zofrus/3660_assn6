@@ -5,7 +5,7 @@ int main(int argc, char *argv[]) {
 	int requests[BLOCK_REQS];
 	int count = 0;
 
-	// basic error handling
+	// Basic error handling
 	if (argc > 1) {
 		fp = fopen(argv[1], "r");
 		if (fp == NULL) {
@@ -20,8 +20,8 @@ int main(int argc, char *argv[]) {
 	}
 	
 	// Call to Algorithms here
-	//FCFS(requests, count);
-	//SSTF(requests, count);
+	FCFS(requests, count);
+	SSTF(requests, count);
 	Look(requests, count);
 	CLook(requests, count);
 
