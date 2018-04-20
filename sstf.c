@@ -8,45 +8,45 @@ void SSTF(int *requests, int count) {
                current = 0,
                   next = 0,
                      i = 0,
-                     j,
-                     p_int,
-                     comp;
+                     j;
 
 for (i = 0; i < count ; i++) {
     temp_array[i] = requests[i];
     flag[i] = 0;
 }
 
-flag[i] = 0;
-	while ( i < count) {
-        j = 0;
-        while (j < count) {
-                if (flag[j] == -1 || j == current){j++;}
+flag[current] = -1;
 
-                else if ( temp_int == 0){
-                    temp_int = abs(temp_array[current] - temp_array[j]);
-                    next = j;
-                    j++;
-                }
-    
-                else if(abs(temp_array[current] - temp_array[j]) < temp_int){
-                    temp_int = abs(temp_array[current] - temp_array[j]);
-                    next = j;
-                    j++;
-                }
-            
-                if(current < temp_int) {
-                    temp_int = current;
-                    next = j;
-                }
-                
-                if(j == count - 1 ){
-                    difference += temp_int;
-                    (temp_array[next] = -1);
-                }
-            }
+while ( i < count) {
+    j = 0;
+
+    while (j < count) {
+        
+        if (flag[j] == -1 || j == current){ j++; }
+
+        else if ( temp_int == 0){
+            temp_int = abs(temp_array[current] - temp_array[j]);
+            next = j;
+            j++;
         }
-		i++;
+    
+        else if(abs(temp_array[current] - temp_array[j]) < temp_int){
+            temp_int = abs(temp_array[current] - temp_array[j]);
+            next = j;
+            j++;
+        }
+
+        else { j ++; }
+    }
+
+    difference += temp_int;
+    flag[current] = -1;
+    current = next;
+    temp_int = 0;
+    i++;
+
 	}
-    printf ("SSTF Total Seek: %d\n", difference);
+
+printf ("SSTF Total Seek: %d\n", difference);
+
 }
