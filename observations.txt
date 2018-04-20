@@ -1,3 +1,7 @@
+Team Members:
+Jordan Carter
+Jason Fuller
+
 Features assigned to Jason:
 1. First Come First Serve
 2. Shortest Seek Time First
@@ -14,8 +18,12 @@ Mutual Features:
 Jason Fuller's Git Log Author and Email:
 Author: zofrus <jasonfuller7@gmail.com>
 
+Jordan Carter's Git Log Author and Email:
+Author: Jordan C <A_10646447@cs3060.ad.uvu.edu>
+
 Letter Grade:
 Jordan Carter = A+
+Jason Fuller = A+
 
 Justification Paragraph:
 
@@ -24,3 +32,11 @@ From Jason Fuller in Regards to Jordan-
     He did a great job at helping break down the algorithms into sudo code
     and was a wonderful team player. I would work with him in a professional 
     environment and really enjoy it. 
+
+From Jordan Carter in Regards to Jason Fuller
+	Jason was crucial in not only the formation of our team, but also in
+	the implementatin of our project. He worked hard to ensure that the
+	development process would run smoothly from start to finish. He also
+	implemented all of the features that were assigned to him, and worked
+	together with me to ensure that all of the necessary components of the
+	project were completed. He is fantastic!
