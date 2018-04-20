@@ -1,0 +1,26 @@
+Features assigned to Jason:
+1. First Come First Serve
+2. Shortest Seek Time First
+
+Features assgned to Jordan:
+1. Non Circular Look
+2. Circular Look
+
+Mutual Features:
+1. assn6.c
+2. Makefile
+3. assn6.h
+
+Jason Fuller's Git Log Author and Email:
+Author: zofrus <jasonfuller7@gmail.com>
+
+Letter Grade:
+Jordan Carter = A+
+
+Justification Paragraph:
+
+From Jason Fuller in Regards to Jordan-
+    Jordan was a key contributer and took care of his assigned features. 
+    He did a great job at helping break down the algorithms into sudo code
+    and was a wonderful team player. I would work with him in a professional 
+    environment and really enjoy it. 
