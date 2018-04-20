@@ -2,59 +2,51 @@
 
 void SSTF(int *requests, int count) {
 	 int temp_array[count];
-     int difference = 0, 
-     		current = 0, 
-              clean = 0,
-               temp_int= 0,
-               next = 0,
-                val = 0,
-				  i = 0,
-                  j = 0;
+           int flag[count];
+        int difference = 0,
+              temp_int = 0,
+               current = 0,
+                  next = 0,
+                     i = 0,
+                     j,
+                     p_int,
+                     comp;
 
 for (i = 0; i < count ; i++) {
     temp_array[i] = requests[i];
+    flag[i] = 0;
 }
-i = 0;
+
+flag[i] = 0;
 	while ( i < count) {
-	    current = requests[i];
-        clean = temp_array[next];
-        int last = next;
-        temp_int= 0;
-        for (j = 0; j < count; j++) {
-            if (j==next){j++;}
-            val = clean;
-            printf("\n\n=====\nval = %d\n", clean);
-            if (temp_array[j] != -1 && temp_array[j]!= val){
-            int comp = temp_array[j];
-            printf("j = %d array_index = %d\n", j, comp);
-            int diff= (abs(val - comp));
-            printf("temp=%d\n", diff);
-            if(temp_int== 0) {temp_int = diff;}
-            if(diff < temp_int) {
-                temp_int = diff;
-                next = j;
-                printf("___next = %d\n", next); 
-            }
+        j = 0;
+        while (j < count) {
+                if (flag[j] == -1 || j == current){j++;}
+
+                else if ( temp_int == 0){
+                    temp_int = abs(temp_array[current] - temp_array[j]);
+                    next = j;
+                    j++;
+                }
+    
+                else if(abs(temp_array[current] - temp_array[j]) < temp_int){
+                    temp_int = abs(temp_array[current] - temp_array[j]);
+                    next = j;
+                    j++;
+                }
             
-            if(j == count - 1 ){
-                difference += temp_int;
-                printf("difference = %d\n", difference);
-                printf("temp_array[i] = %d temp[last = %d]\n", temp_array[i], temp_array[last]);
-                printf("i - %d\n",i);
-                // (i == 0) ? 
-                // (temp_array[i] = -1) :
-                (temp_array[last] = -1);
-                printf("AFTER --- temp_array[i] = %d and temp[last] = %d\n", temp_array[i], temp_array[last]);
+                if(current < temp_int) {
+                    temp_int = current;
+                    next = j;
+                }
+                
+                if(j == count - 1 ){
+                    difference += temp_int;
+                    (temp_array[next] = -1);
+                }
             }
-            }
-            // printf("current: %d\n diff:%d\n difference: %d\n", current, diff, difference);
         }
-        printf("OUTSIDE temp_array[i] = %d\n", temp_array[i]); 
-		// (next > current) ? 
-		// (difference += next - current) : 
-		// (difference += current - next);
 		i++;
 	}
-
-	 printf ("SSTF Total Seek: %d\n", difference);
+    printf ("SSTF Total Seek: %d\n", difference);
 }
