@@ -16,8 +16,11 @@ for (i = 0; i < count ; i++) {
 }
 
 flag[current] = -1;
+i = 0;
 
-while ( i < count) {
+while ( i < count ) {
+    
+    i++;
     j = 0;
 
     while (j < count) {
@@ -36,14 +39,13 @@ while ( i < count) {
             j++;
         }
 
-        else { j ++; }
+        else { j++; }
     }
 
     difference += temp_int;
     flag[current] = -1;
     current = next;
     temp_int = 0;
-    i++;
 
 	}
 
