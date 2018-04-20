@@ -1,3 +1,15 @@
+// Author: Jordan Carter
+/******** Group project **********/
+// CS 3060 Spring 2018
+// Assignment #6
+/* Promise of Originality
+I promise that this source code file has, in it's entirety, been
+written by myself and by no other person or persons. If at any time an
+exact copy of this source code is found to be used by another person in
+this term, I understand that both myself and the student that submitted
+the copy will receive a zero on this assignment.
+*/
+
 #include "assn6.h"
 
 
@@ -15,7 +27,6 @@ void Look(int *requests, int count)
 
   //keeping track of the first request time in the unsorted list
   head = list[0];
-  //printf("head: %d\n", head);
   //sorting the list of request times
   sort(list, count);
 
@@ -23,12 +34,10 @@ void Look(int *requests, int count)
   while (list[current] != head)
   {
    current++;
-   //printf("%d\n", current);
   }
 
   //saving the index of head in the sorted array before modifying current
   headIndex = current;
-  printf("headIndex should be 15: %d\n", headIndex);
 
   //keeping a running sum of the absolute value of head minus the item after head etc.
   while (current < count - 1)
@@ -36,15 +45,12 @@ void Look(int *requests, int count)
     seek += abs(list[current] - list[current + 1]);
     current++;
   }
-//  printf("current should be 19: %d\n", current);
-//  printf("seek should be 26: %d\n", seek);
+
   //finding the difference between the last item in the list and the item right before head
   //adding the difference to the total seek time
   seek += abs(list[current] - list[headIndex - 1]);
   //setting our current index to one item before head
   current = headIndex - 1;
-//  printf("seek should be 61: %d\n", seek);
-//  printf("current should be 14: %d\n", current);
 
   //adding the difference between the item before head and the item before that to total seek time
   //etc...
@@ -52,7 +58,6 @@ void Look(int *requests, int count)
   {
     seek += abs(list[current] - list[current - 1]);
     current--;
-//    printf("seek: %d, current: %d\n", seek, current);
   }
 
   //printing the result
