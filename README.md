@@ -1,1 +1,2 @@
-# 3660_assn6
+cpu scheduler algorithms practice
+#written in C
